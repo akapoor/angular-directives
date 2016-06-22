@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Directives</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div ng-app="testApp">
+            <div ng-controller="mainCtrl as ctrl">
+                <p>{{person.name}} {{person.age}} {{person.location}}</p>
+                <ir-boxes count="4"></ir-boxes>
+            </div>
+        </div>
+    </body>
 </html>
