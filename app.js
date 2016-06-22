@@ -26,7 +26,7 @@ app.directive('irBoxes', function(){
 				return new Array(parseInt(n));
 			}
 			scope.printMe = function(num) {
-				console.log(num);
+				console.log(num+1);
 			}
 		}
 	}
